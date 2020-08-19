@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <title>FCC Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+ href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+</head>
+  
+
+  <body>
+   <!-- main body/container -->
+   <div class="container">
+     <header class="header">
+       <h1 id="title" class="text-center">
+        Mechanical Keyboard Survey Form 
+       </h1>
+        <p id="description" class="description text-center">Your input helps us build better boards, thank you.</p>
+     </header>
+    <!-- name input -->
+    <form id="survey-form">
+      <div id="form-group">
+        <label id="name-label" for="name">Name</label>
+      <input type="text"
+             name="name"
+             id="name"
+             class="form-control"
+             placeholder="Enter your name"
+             required>
+      </div>
+      
+      <!-- email input -->
+      <div id="form-group">
+        <label id="email-label" for="email">Email</label>
+      <input type="email"
+             name="email"
+             id="email"
+             class="form-control"
+             placeholder="johndoe@gmail.com"
+             required>
+      </div>
+      
+       <!-- age input -->
+       <div id="form-group">
+        <label id="number-label" for="number">Age <span class="clue1">(optional)</label>
+      <input type="number"
+             name="age"
+             id="number"
+             min= "10"
+             max= "99"
+             class="form-control"
+             placeholder="Age">
+      </div>    
+      <!-- Select dropdown w/ options -->
+      <div class="form-group">
+        <p>Which size keyboard works best for you?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select size</option>
+          <option value="full-size">Full Size</option>
+          <option value="tkl">Tenkeyless</option>
+          <option value="75%">75%</option>
+          <option value="60%">60%</option>
+          <option value="40%">40%</option>
+          <option value="other">Other</option>
+         </select>
+      </div>  
+         
+      <!-- Radio buttons input -->
+      <div class="form-group">
+        <p>How many keyboards do you own?</p>
+        <label>
+          <input 
+             name="number-of-keyboards"
+             value="1-2"
+             type="radio"
+             class="input-radio"
+             checked>1-2 keyboards
+         </label>
+        
+          <label>
+          <input 
+             name="number-of-keyboards"
+             value="3-5"
+             type="radio"
+             class="input-radio"
+             >3-5 keyboards
+         </label>
+        
+         <label>
+          <input 
+             name="number-of-keyboards"
+             value="5>"
+             type="radio"
+             class="input-radio"
+             >More than 5 keyboards
+         </label>
+      </div>
+         
+      <!-- Checkbox input -->
+      <div class="form-group">
+        <p class="what-type">What types of boards would you like to see more of? <span class="clue">(Check all that apply)</span></p>
+        
+        <label>
+          <input 
+            name="like-to-see"
+            value="hotSwappable"
+            type="checkbox"
+            class="input-checkbox"/>Hot-swappable
+        </label>
+        
+        <label>
+          <input 
+            name="like-to-see"
+            value="wireless"
+            type="checkbox"
+            class="input-checkbox"/>Wireless
+        </label>
+        
+        <label>
+          <input 
+            name="like-to-see"
+            value="diy"
+            type="checkbox"
+            class="input-checkbox"/>DIY
+        </label>
+        
+        <label>
+          <input 
+            name="like-to-see"
+            value="rgb"
+            type="checkbox"
+            class="input-checkbox"/>w/ RGB Lights
+        </label>
+        
+        <label>
+          <input 
+            name="like-to-see"
+            value="pbt"
+            type="checkbox"
+            class="input-checkbox"/>w/ PBT Keycaps
+        </label>
+        
+        <label>
+          <input 
+            name="like-to-see"
+            value="customizable"
+            type="checkbox"
+            class="input-checkbox"/>More Customizable Features
+        </label>  
+      </div>   
+         
+      <!-- textarea *not an input, no label*-->
+         <div class="form-group">
+           <p>Comments or questions?</p>
+          <textarea class="input-textarea" name="comment" id="comments" cols="50" rows="6" placeholder="Enter your comments here..."></textarea>
+         </div>
+         
+      <!-- Submit Button -->
+         <div class="form-group">
+           <button type="submit" id="submit" class="submit-button">Submit</button>
+         </div>   
+    </form>
+       <footer>
+        <p>Already have an account? <a href="#">Login Here</a></p>
+      </footer>
+   </div>  
+  </body>    
+</html>

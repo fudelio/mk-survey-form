@@ -1,0 +1,199 @@
+body {
+  font-family: "Raleway", sans-serif;  
+   line-height: 1.8;
+   font-size: 1rem;
+   font-weight: 400;
+   color: var(--color-white);
+   margin: 0;
+   background: linear-gradient(53deg, #000000, #9400ff);
+     background-size: 400% 400%;
+ 
+     -webkit-animation: body-animation 25s ease infinite;
+     animation: body-animation 25s ease infinite;
+ }
+ 
+ @-webkit-keyframes body-animation {
+     0%{background-position:93% 0%}
+     50%{background-position:0% 100%}
+     100%{background-position:93% 0%}
+ }
+ @keyframes body-animation {
+     0%{background-position:93% 0%}
+     50%{background-position:0% 100%}
+     100%{background-position:93% 0%}
+ }
+ 
+ @-webkit-keyframes body-animation {
+     0%{background-position:93% 0%}
+     50%{background-position:0% 100%}
+     100%{background-position:93% 0%}
+ }
+ @keyframes body-animation {
+     0%{background-position:93% 0%}
+     50%{background-position:0% 100%}
+     100%{background-position:93% 0%}
+ }
+ 
+ a {
+   text-decoration: none;
+ }
+ 
+ a:hover {
+   color: purple;
+ }
+ .container {
+   margin: 30px auto;
+   max-width: 500px;
+   padding: 20px;
+   border: 10px solid purple;
+   border-radius: 7px;
+   background: linear-gradient(3deg, #ff0000, #0037ff, #ff0afa, #ffc800);
+     background-size: 800% 800%;
+ 
+     -webkit-animation: AnimationName 25s ease-in-out infinite;
+     -moz-animation: AnimationName 25s ease-in-out infinite;
+     -o-animation: AnimationName 25s ease-in-out infinite;
+     animation: AnimationName 25s ease-in-out infinite;
+ }
+ 
+ 
+ @-webkit-keyframes AnimationName {
+     0%{background-position:53% 0%}
+     50%{background-position:48% 100%}
+     100%{background-position:53% 0%}
+ }
+ @-moz-keyframes AnimationName {
+     0%{background-position:53% 0%}
+     50%{background-position:48% 100%}
+     100%{background-position:53% 0%}
+ }
+ @-o-keyframes AnimationName {
+     0%{background-position:53% 0%}
+     50%{background-position:48% 100%}
+     100%{background-position:53% 0%}
+ }
+ @keyframes AnimationName {
+     0%{background-position:53% 0%}
+     50%{background-position:48% 100%}
+     100%{background-position:53% 0%}
+ }
+ 
+ h1 {
+   color#333;
+   text-align: center;
+   line-height: 1.2;
+ }
+ 
+ p {
+   font-size: 1.125rem;
+   text-align: center;
+ }
+ 
+ h1, p {
+   margin-top: 0;
+   margin-bottom: 0.5rem;
+ }
+ 
+ p, what-type {
+   font-size: 15px;
+   text-justify: left;
+ }
+ 
+ 
+ label {
+   /* label's hold the inputs, so this will
+   affect all the spacing for the input lines */
+   display: flex;
+   align-items: center;
+   font-size: 1.125rem;
+   margin-bottom: 0.5rem;
+ }
+ 
+ input,
+ button,
+ select,
+ textarea {
+   margin: 0;
+   font-family: inherit;
+   font-size: inherit;
+   line-height: inherit;
+ }
+ 
+ .description {
+   text-align: center;
+   font-style: italic;
+ }
+ 
+ .clue {
+   margin-left: 3px;
+   font-size: 10.5px;
+   color: #334;
+ }
+ .clue1 {
+   margin-left: 3px;
+   font-size: 13px;
+   color: #334;
+ }
+ 
+ .text-center {
+   text-align: center;
+ }
+ 
+ .form-control {
+   display: block;
+   width: 95%;
+   margin: auto;
+   height: 2rem;
+   padding: 4px;
+   color: #495057;
+   background-color: #fff;
+   background-clip: padding-box;
+   border: 1px solid #ced4da;
+   border-radius: 0.25rem;
+   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+ }
+ 
+ .form-control:focus {
+   border-color: #80bdff;
+   outline: 0;
+   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+ }
+ 
+ .input-radio,
+ .input-checkbox {
+   display: inline-block;
+   margin-right: 0.625rem;
+   min-height: 1.25rem;
+   min-width: 1.25rem;
+ }
+ 
+ .input-textarea {
+   min-height: 100px;
+   width: 100%;
+   padding: 0.625rem;
+   resize: vertical;
+ }
+ 
+ .submit-button {
+   display: block;
+   width: 100%;
+   padding: 10px;
+   margin-top: 10px;
+   background: var(--color-green);
+   color: #333;
+   background-color: coral;
+   border-radius: 2px;
+   cursor: pointer;
+ }
+ 
+ .submit-button:hover {
+   color: red;
+   background-color: purple;
+ }
+ 
+ .form-group {
+   margin-top: 10px;
+   margin-bottom: 10px;
+ }
+ 
+ 
